@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint src",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@react-leaflet/core": "1.0.2",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.16.7",
+    "@graphql-codegen/cli": "2.15.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.4.0",
@@ -45,6 +47,7 @@
     "jest": "^27.4.7",
     "jest-environment-jsdom": "^27.4.7",
     "jest-styled-components": "^7.0.8",
-    "prettier": "2.8.0"
+    "prettier": "2.8.0",
+    "@graphql-codegen/client-preset": "1.2.0"
   }
 }
